@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 35px;" >
+      <img src="/static/img/logo.svg" alt="" width="60" height="48" class="d-inline-block align-text-top">
+      PROJECTS 
+    </div>
+<!---
+--->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+            {% block navlink %}
+
+            <a class="nav-item nav-link " href="https://www.linkedin.com/in/andrés-garcía-calle-7b441267/"><i class="fab fa-linkedin" style='font-size:30px'></i></a> 
+            <a class="nav-item nav-link " href="https://t.me/AndFer"><i class="fab fa-telegram" style='font-size:30px'></i></a>
+            <a class="nav-item nav-link " href="https://github.com/and88x"><i class="fab fa-github" style='font-size:30px'></i></a> 
+<!---            
+            <a class="nav-item nav-link " href="mailto:fernando.garcia@exatec.tec.mx"><i class="fab fa-envelope" style='font-size:30px'></i></a>
+--->
+            {% endblock navlink %}
+        </div>
+    </div>
+</nav>
+
+<h1> </h1>
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Hi, I am Fernando García</h1>
+      <p class="lead text-muted">Fernando is a freelance science/engineering programmer providing high-quality and very reliable solutions for your problems.</p>
+
+      <p>
+        <img class="img-fluid" src="/static/img/I-min-min.jpg" width="20%" height="20%">
+      </p>
+<!---      
+--->      
+      <a href="mailto:fernando.garcia@exatec.tec.mx" class="btn btn-primary my-2"> <img src="/static/img/envelope-regular.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> Contact me </a>
+    </div>
+  </section>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row">
+        {% for project in projects %}
+            <div class="col-md-4">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="{% static project.image %}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.sdescription }}</p>
+                        <a href="{% url 'project_detail' project.pk %}"
+                           class="btn btn-primary">
+                            More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% block footer %}
+<footer class="text-muted">
+    <div class="container text-center">
+      <p>&copy; af {% now 'Y' %}</p>
+      <p>Inspired by the portfolio of <a href="https://chuks-portfolio.herokuapp.com">Godson Chuks</a></p>
+        </div>
+    </footer>
+{% endblock footer %}
+
+{% endblock %}
+

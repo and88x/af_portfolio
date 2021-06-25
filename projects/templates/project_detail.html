@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 35px;" >
+      <img src="/static/img/logo.svg" alt="" width="60" height="48" class="d-inline-block align-text-top">
+      {{ project.title }} 
+    </div>
+<!---
+<h1>{{ project.title }}</h1>
+    <a class="navbar-brand" href="#">
+    <img src="//static//img//image2vector.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Projects</a>
+--->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+            {% block navlink %}
+
+            <a class="nav-item nav-link " href="https://www.linkedin.com/in/andrés-garcía-calle-7b441267/"><i class="fab fa-linkedin" style='font-size:30px'></i></a> 
+            <a class="nav-item nav-link " href="https://t.me/AndFer"><i class="fab fa-telegram" style='font-size:30px'></i></a>
+            <a class="nav-item nav-link " href="https://github.com/and88x"><i class="fab fa-github" style='font-size:30px'></i></a> 
+<!---            
+            <a class="nav-item nav-link " href="mailto:fernando.garcia@exatec.tec.mx"><i class="fab fa-envelope" style='font-size:30px'></i></a>
+--->
+            {% endblock navlink %}
+        </div>
+    </div>
+</nav>
+<h1> </h1>
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row" style="text-align: justify;">
+
+            <div class="card mb-3">
+              <img class="card-img-top" src="{% static project.second_img %}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">About the project: </h5>
+                <p class="card-text">{{ project.ldescription|linebreaks }}</p>
+                <p class="card-text"><small class="text-muted">{{ project.technology }}</small></p>
+              </div>
+            </div>
+
+        </div>
+        <div class="text-right">
+            <a href="{{ project.link }}" class="btn btn-primary">View on GitHub</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+

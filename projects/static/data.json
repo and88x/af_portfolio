@@ -1,0 +1,84 @@
+{
+	"project" : [
+		{
+			"ID"           : "P1",
+			"title"        : "Authentication System using CoAP protocol",
+			"sdescription" : "Authentication system based on fingerprint recognition and encrypted CoAP messages.",
+			"ldescription" : "CoAP is a web protocol for constrained devices that fulfilling M2M  requirements. Some characteristics of this work are:\n- The application depends on encrypting a client biometric (fingerprint) by a symmetric key and validating the client on the server-side by decrypting a symmetric key\n- The application encrypts authentification messages and resource responses using Advanced Encryption Standard (AES)\n- Keys have 128 bits long\n- This work operates under the CCM mode",
+			"technology"   : "Authentication, Encryption, Biometrics",
+			"image"        : "img/coap_autentification_1.jpg",
+			"second_img"   : "img/coap_autentification_2.png",
+			"link"         : "https://github.com/and88x/Authentication_service_to_IoT_clients"
+		},
+		{
+			"ID"           : "P2",
+			"title"        : "System Identification based on FEM and a recurrent neural network",
+			"sdescription" : "Identification of a nonlinear system without previous knowledge of it.",
+			"ldescription" : "This project is based on the article \"Distributed Parameter System Identification using Finite-Element Differential Neural Networks\". It uses a Differential Neural Network (DNN) based on the Finite Element Method (FEM) structure to perform the identification of a unknown distributed parameter system. This system represents the propagation of sound waves, due to an initial perturbation, in a cubic room.",
+			"technology"   : "FEM, Diferential Neural Networks, System Identification",
+			"image"        : "img/FEDNN_SI_1.jpg",
+			"second_img"   : "img/FEDNN_SI_2.gif",
+			"link"         : "https://github.com/and88x/System_Identification_using_FEDNN_1"
+		},
+		{
+			"ID"           : "P3",
+			"title"        : "Electric Energy Meters Clustering",
+			"sdescription"  : "Various clustering methods are applied in an electric meters dataset.",
+			"ldescription" : "The present project consists of separating into groups a dataset of Electric Meters. The application of this work can be useful for many purposes such as:\n- Detecting failures\n- Detecting fraudulent usage\n- Distinguish user types for tariff design\n- Demand-side management\n The dataset consists of measures of 1507 smart electric meters (after delete meters with missing data) during 1 year.",
+			"technology"   : "Clustering, PCA, Data Visualization",
+			"image"        : "img/Electric_meters_clustering_1.jpg",
+			"second_img"   : "img/Electric_meters_clustering_2.jpg",
+			"link"         : "https://github.com/and88x/Electric_Meters_Clustering_1"
+		},
+		{
+			"ID"           : "P4",
+			"title"        : "Model Predictive Control for TGWH",
+			"sdescription" : "Water temperature control using a predictive technique.",
+			"ldescription" : "The system model was gotten from the article: \"Simulation models for tankless gas water heaters\". Further, a model was made in Simulink to simulate the real system. It has two inputs: power (controller output) and cold water flow rate.\n The 3 main steps to performs the MPC are:\n1) Measure values\n2) Solve the Optimization Constrained Problem\n3) Update the states and the controller output\n",
+			"technology"   : "Optimization, Automatic Control, MPC",
+			"image"        : "img/MPC_4_TGWH_1.jpg",
+			"second_img"   : "img/MPC_4_TGWH_2.jpg",
+			"link"         : "https://github.com/and88x/MPC_for_Tankless_Gas_Water_Heaters"
+		},
+		{
+			"ID"           : "P5",
+			"title"        : "Fuzzy Logic based Load Balancer",
+			"sdescription"  : "Load balancer based on the ABC optimization algorithm and Fuzzy Logic.",
+			"ldescription" : "The project is programmed in Java using the CloudSim framework. In the first instance, the cloudlets’ tasks are assigned to a Virtual Machine according to the ABC algorithm. After that, tasks are reassigned using Fuzzy Logic blocks to select the best Host and VM. This project pretends to analyze if this approach improves some Quality of service parameters as Degree of Imbalance, Response Time, Cost, and so on.",
+			"technology"   : "Load balancer, Optimization, Fuzzy Logic",
+			"image"        : "img/load_balancer_1.jpg",
+			"second_img"   : "img/load_balancer_2.jpg",
+			"link"         : "https://github.com/and88x/Fuzzy_Logic_based_Load_balancing_of_tasks"
+		},
+		{
+			"ID"           : "P6",
+			"title"        : "Combinatorial Optimization using PSO",
+			"sdescription" : "Find the best combination of 3 rescue ships to attend marine accidents.",
+			"ldescription" : "This project consists of performing particle swarm optimization to select the best group of 3 rescue ships to attend marine accidents. There are 725 rescue ships distributed in a particular ocean region with a high level of maritime activity. One accident should be assigned to the nearest rescue ship, considering all accidents. As a constraint condition, an accident must be assigned to a rescue ship within 30 nautical miles, no matter how far.",
+			"technology"   : "Optimization, PSO",
+			"image"        : "img/combinatorial_optimization_1.jpg",
+			"second_img"   : "img/combinatorial_optimization_2.gif",
+			"link"         : "https://github.com/and88x/Combinatorial_Optimization_using_PSO"
+		},
+		{
+			"ID"           : "P7",
+			"title"        : "Fuzzy control in Simulink",
+			"sdescription" : "A Takagi-Sugeno controller to control a Twin Rotor MIMO System.",
+			"ldescription" : "The project aims to replace the PID controllers, supplied by a bought equipment of the client, with diffuse Mamdani type controllers. The typical rules of this controller are:\nIf e1 is A and e2 is B then z is C\nWhere e1 and e2 are the input signals with membership functions A and B. z is the output signal with membership function C. The selected architecture is based on the fuzzy PD-type controllers shown in the article Designing a Fuzzy-like PD controller for an underwater robot, where the error signal and the error rate signal are used as inputs of the controllers.",
+			"technology"   : "Simulink, Fuzzy Logic, Automatic Control",
+			"image"        : "img/fuzzy_control_1.jpg",
+			"second_img"   : "img/fuzzy_control_2.jpg",
+			"link"         : "https://github.com/and88x/Fuzzy_control_of_the_TMRS_with_Simulink"
+		},
+		{
+			"ID"           : "P8",
+			"title"        : "Predictive Keyboard with R",
+			"sdescription" : "Predict text with a language model based in databases from twitter, blog and news.",
+			"ldescription" : "The purpose of this work is to builds a smart keyboard that makes it easier for people to type, for example, on their mobile devices. This is the final project of the Data Science Capstone course from Coursera. It starts with the basics, analyzing a large corpus of text documents to discover the structure in the data and how words are put together. Next, I cover cleaning and analyzing text data, then building and sampling from a predictive text model. ",
+			"technology"   : "Exploratory Data Analysis, n-gram model, NLP",
+			"image"        : "img/Predictive_Keyboard_1.png",
+			"second_img"   : "img/Predictive_Keyboard_2.png",
+			"link"         : "https://github.com/and88x/Predictive_Keyboard_with_R"
+		}
+	]
+}
