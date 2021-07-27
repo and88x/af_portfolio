@@ -1,6 +1,16 @@
 {
 	"project" : [
 		{
+			"ID"           : "P9",
+			"title"        : "UAV-based Air Pollutant Source Localization",
+			"sdescription" : "4 navigation strategies for guiding 2 UAVs in an air pollutant monitoring platform.",
+			"ldescription" : "The problem aborted by this project is the search and location of an air pollutant source. A plume of SO2 is simulated and placed in a region to perform the search. The proposed navigation strategy is compared with three other tracking strategies: circular paths and leader-follower behaviour, random walk with particle swarm optimization, and a hill climb traceability algorithm. The parameters for comparison were: proximity to the source, best pollutant sample, time to finish the exploration phase, and so on.",
+			"technology"   : "MAVLINK protocol, Clustering, Time-varying source",
+			"image"        : "img/Aircraft_navigation_1.png",
+			"second_img"   : "img/Aircraft_navigation_2.gif",
+			"link"         : "https://github.com/and88x/afp001_UAV-based-APSL"
+		},
+		{
 			"ID"           : "P1",
 			"title"        : "Authentication System using CoAP protocol",
 			"sdescription" : "Authentication system based on fingerprint recognition and encrypted CoAP messages.",

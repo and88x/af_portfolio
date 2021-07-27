@@ -5,6 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
+load_data.py
 
 # Distribution / packaging
 .Python

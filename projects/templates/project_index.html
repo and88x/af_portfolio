@@ -6,8 +6,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#" style="font-size: 35px;" >
-      <img src="/static/img/logo.svg" alt="" width="60" height="48" class="d-inline-block align-text-top">
-      PROJECTS 
+      <img src="https://raw.githubusercontent.com/and88x/af_portfolio/50c7f7fecc3c60d5f70247f5f5dbe88238c65f49/projects/static/img/logo.svg" alt="" width="60" height="48" class="d-inline-block align-text-top">
+      PROJECTS
     </div>
 <!---
 --->
@@ -18,10 +18,10 @@
         <div class="navbar-nav ml-auto">
             {% block navlink %}
 
-            <a class="nav-item nav-link " href="https://www.linkedin.com/in/andrés-garcía-calle-7b441267/"><i class="fab fa-linkedin" style='font-size:30px'></i></a> 
+            <a class="nav-item nav-link " href="https://www.linkedin.com/in/andrés-garcía-calle-7b441267/"><i class="fab fa-linkedin" style='font-size:30px'></i></a>
             <a class="nav-item nav-link " href="https://t.me/AndFer"><i class="fab fa-telegram" style='font-size:30px'></i></a>
-            <a class="nav-item nav-link " href="https://github.com/and88x"><i class="fab fa-github" style='font-size:30px'></i></a> 
-<!---            
+            <a class="nav-item nav-link " href="https://github.com/and88x"><i class="fab fa-github" style='font-size:30px'></i></a>
+<!---
             <a class="nav-item nav-link " href="mailto:fernando.garcia@exatec.tec.mx"><i class="fab fa-envelope" style='font-size:30px'></i></a>
 --->
             {% endblock navlink %}
@@ -37,11 +37,11 @@
       <p class="lead text-muted">Fernando is a freelance science/engineering programmer providing high-quality and very reliable solutions for your problems.</p>
 
       <p>
-        <img class="img-fluid" src="/static/img/I-min-min.jpg" width="20%" height="20%">
+        <img class="img-fluid" src="https://github.com/and88x/af_portfolio/blob/master/projects/static/img/I-min-min.jpg?raw=true" width="20%" height="20%">
       </p>
-<!---      
---->      
-      <a href="mailto:fernando.garcia@exatec.tec.mx" class="btn btn-primary my-2"> <img src="/static/img/envelope-regular.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> Contact me </a>
+<!---
+--->
+      <a href="mailto:fernando.garcia@exatec.tec.mx" class="btn btn-primary my-2"> <img src="https://raw.githubusercontent.com/and88x/af_portfolio/50c7f7fecc3c60d5f70247f5f5dbe88238c65f49/projects/static/img/envelope-regular.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> Contact me </a>
     </div>
   </section>
 
@@ -52,7 +52,7 @@
         {% for project in projects %}
             <div class="col-md-4">
                 <div class="card mb-2">
-                    <img class="card-img-top" src="{% static project.image %}">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/and88x/af_portfolio/50c7f7fecc3c60d5f70247f5f5dbe88238c65f49/projects/{% static project.image %}">
                     <div class="card-body">
                         <h5 class="card-title">{{ project.title }}</h5>
                         <p class="card-text">{{ project.sdescription }}</p>
